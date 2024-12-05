@@ -13,7 +13,7 @@ Este proyecto permite gestionar clientes y sus electrodomésticos en un sistema 
 3. Configura las credenciales (usuario y contraseña) de `conexion.php` para que se conecte a tu base de datos. Si no usas un usuario o administrador distintos al root no es necesario este paso.
 
 ## Uso
-- Accede al sistema mediante `http://localhost/[CARPETA DE PROYECTOS DENTRO DE WWW]/ProyectoGestionClientes&Electrodomesticos/index.html`.
+- Accede al sistema mediante `http://localhost/[CARPETA DE PROYECTOS DENTRO DE WWW]/gestion-clientes-electrodomesticos/index.html`.
 - Utiliza las opciones para registrar, modificar, consultar y dar de baja clientes y electrodomésticos.
 
 ## Datos
