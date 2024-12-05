@@ -1,6 +1,6 @@
 # Proyecto de Gestión de Clientes y Electrodomésticos - Refrigeración Santa Fe
 
-Este proyecto permite gestionar clientes y sus electrodomésticos en un sistema de reparación. Se puede registrar, modificar, consultar y eliminar información de clientes junto a sus electrodomesticos.
+Este proyecto permite gestionar clientes y sus electrodomésticos en un sistema de reparación. Se puede registrar, modificar, consultar y eliminar información de clientes junto a sus electrodomesticos. Tambien se le otorga la habilidad de poder imprimir dichos perfiles con información.
 
 ## Requisitos
 - Servidor local: XAMPP, WAMP o similar.
