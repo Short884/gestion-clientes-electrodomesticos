@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Cliente</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../controlador/detalleCliente.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>Perfil del Cliente</h1>
+        <button id="btnVolverClientes" onclick="location.href='clientes.html'">Volver a Clientes</button>
+    </header>
+    <main>
+        <section id="infoCliente">
+            <h2>Información del Cliente</h2>
+            <p id="nombreCliente"></p>
+            <p id="dniCliente"></p>
+            <p id="telefonoCliente"></p>
+            <p id="ivaCliente"></p>
+        </section>
+        <section id="electrodomesticosCliente">
+            <h2>Electrodomésticos</h2>
+            <button id="btnNuevoElectrodomestico">Añadir Electrodoméstico</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Modelo</th>
+                        <th>Cantidad</th>
+                        <th>Problema</th>
+                        <th>Tipo Reparación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaElectrodomesticos"></tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Modal para añadir/modificar electrodomésticos -->
+    <div id="modalElectrodomestico" class="modal">
+        <div class="modal-contenido">
+            <span id="cerrarModalElectrodomestico" class="cerrar">&times;</span>
+            <h2 id="tituloModalElectrodomestico">Añadir Electrodoméstico</h2>
+            <form id="formularioElectrodomestico">
+                <input type="hidden" name="id_cliente" id="idCliente">
+                <input type="hidden" name="id" id="idElectrodomestico">
+                <select name="tipo" id="tipo" required>
+                    <option value="lavarropas">Lavarropas</option>
+                    <option value="heladera">Heladera</option>
+                </select>
+                <input type="text" name="modelo" id="modelo" placeholder="Modelo" required>
+                <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" required>
+                <textarea name="problema" id="problema" placeholder="Problema" required></textarea>
+                <select name="tipo_reparacion" id="tipoReparacion" required>
+                    <option value="tecnica">Técnica</option>
+                    <option value="mecanica">Mecánica</option>
+                </select>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <button id="btnVolverMenu" onclick="location.href='./clientes.html'">Volver a la Tabla de Perfiles</button>
+    </footer> 
+
+    <footer class="footer">
+        <p>&copy; 2024 - Refrigeración Santa Fe. Todos los derechos reservados (a Stefano Caccia).</p>
+    </footer>
+</body>
+</html>

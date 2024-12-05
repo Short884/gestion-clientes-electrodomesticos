@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../controlador/clientes.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>Gestión de Clientes y Electrodomésticos</h1>
+        <button id="btnNuevoCliente">Añadir Cliente</button>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>DNI</th>
+                    <th>Teléfono</th>
+                    <th>IVA</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaListadoClientes"></tbody>
+        </table>
+    </main>
+
+    <!-- Modal para añadir cliente -->
+    <div id="modalCliente" class="modal">
+        <div class="modal-contenido">
+            <span id="cerrarModal" class="cerrar">&times;</span>
+            <h2>Añadir Cliente</h2>
+            <form id="formularioCliente">
+                <input type="text" name="dni" id="dni" placeholder="DNI" required>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
+                <select name="iva" id="iva">
+                    <option value="inscripto">Inscripto</option>
+                    <option value="monotributo">Monotributo</option>
+                    <option value="exento">Exento</option>
+                </select>
+                <button type="submit">Guardar Cliente</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <button id="btnVolverMenu" onclick="location.href='../index.html'">Volver a Inicio</button>
+    </footer> 
+    
+    <footer class="footer">
+        <p>&copy; 2024 - Refrigeración Santa Fe. Todos los derechos reservados (a Stefano Caccia).</p>
+    </footer>
+
+</body>
+</html>
