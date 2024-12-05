@@ -157,3 +157,50 @@ main {
     margin: 0; 
     font-size: 14px; 
 }
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    header, footer, button {
+        display: none; 
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table th, table td {
+        border: 1px solid #000;
+        padding: 5px;
+        text-align: left;
+    }
+}
+
+.mode-toggle {
+    text-align: right; 
+    margin-bottom: 20px;
+}
+
+.mode-toggle .btn-secondary {
+    background-color: #607D8B; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mode-toggle .btn-secondary:hover {
+    background-color: #546E7A; 
+}

@@ -93,3 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mostrarInfoCliente();
     mostrarElectrodomesticos();
 });
+
+// Impresión de los datos
+document.getElementById('btnImprimir').addEventListener('click', () => {
+    window.print();
+});
